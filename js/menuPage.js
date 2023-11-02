@@ -2,14 +2,11 @@
 import { Menu } from './dataMenu.js'
 import { rupiahFormat } from './utils.js'
 
-// Get the container where menu items will be added
-const menuContainer = document.getElementById('home-menu-items')
+// Get the container where all menu items will be added
+const allMenuContainer = document.getElementById('all-menu-items')
 
-// Limit the number of items to be displayed
-const maxItems = 8
-
-// Loop through the first 6 items in the Menu array and create HTML elements for each item
-Menu.slice(0, maxItems).forEach(item => {
+// Loop through all items in the Menu array and create HTML elements for each item
+Menu.forEach(item => {
     const menuItem = document.createElement('div')
     menuItem.className =
         'item-menu shadow-md p-3 rounded-md border border-gray-100'
@@ -52,7 +49,7 @@ Menu.slice(0, maxItems).forEach(item => {
     menuItem.appendChild(price)
 
     // Add the menu item to the container
-    menuContainer.appendChild(menuItem)
+    allMenuContainer.appendChild(menuItem)
 })
 
 // Fungsi ini akan dijalankan ketika tombol "Kirim Pesan" diklik

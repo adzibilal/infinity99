@@ -47,6 +47,43 @@ const Menu = [
         image: "/img/menu/menu7.jpg",
         category: "Smoothies"
     },
+    {
+        name: "Onion Ring",
+        price: 25000,
+        image: "/img/menu/onion.jpg",
+        category: "Snack"
+    },
+    {
+        name: "French Fries",
+        price: 25000,
+        image: "/img/menu/kentang.jpg",
+        category: "Snack"
+    },
+    {
+        name: "Sausage",
+        price: 25000,
+        image: "/img/menu/sosis.jpg",
+        category: "Snack"
+    },
+    {
+        name: "Pisang Keju",
+        price: 25000,
+        image: "/img/menu/pisang-keju.jpg",
+        category: "Snack"
+    },
+    {
+        name: "Nasi Goreng",
+        price: 25000,
+        image: "/img/menu/nasgor.jpg",
+        category: "Main Course"
+    },
+    {
+        name: "Ramen Katsu",
+        price: 25000,
+        image: "/img/menu/ramenkatsu.jpg",
+        category: "Main Course"
+    },
+
 ];
 
 export { Menu };
