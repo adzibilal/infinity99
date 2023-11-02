@@ -32,7 +32,7 @@ Menu.slice(0, maxItems).forEach(item => {
 
     // Create and set the name element
     const name = document.createElement('div')
-    name.className = 'text-2xl text-left font-bold'
+    name.className = 'text-2xl text-left font-bold max-sm:text-lg'
     name.textContent = item.name
 
     // Create and set the price element
