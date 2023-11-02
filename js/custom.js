@@ -71,8 +71,7 @@ Pesan:
 ${pesan}.`
 
     // Membuat URL WhatsApp dengan parameter yang dinamis
-    // const waURL = `https://api.whatsapp.com/send?phone=6281320969970&text=${encodeURIComponent(text)}`
-    const waURL = `https://api.whatsapp.com/send?phone=6289648321725&text=${encodeURIComponent(text)}`
+    const waURL = `https://api.whatsapp.com/send?phone=6281320969970&text=${encodeURIComponent(text)}`
 
     // Membuka jendela baru dengan URL WhatsApp
     window.open(waURL, '_blank')
