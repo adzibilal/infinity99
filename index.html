@@ -118,7 +118,7 @@
         </header>
 
         <!-- Menu Section -->
-        <section id="menu" class="py-16">
+        <section id="menu" class="py-16 px-5">
             <div class="container mx-auto text-center">
                 <h2
                     class="text-3xl font-bold text-white bg-emerald-950 w-max mx-auto px-5"
@@ -128,6 +128,19 @@
                     Our Menu
                 </h2>
                 <!-- Add your menu items here -->
+
+                <div
+                    class="grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-3 mt-8"
+                    id="home-menu-items">
+                    <!-- looping from js -->
+                </div>
+
+                <a href="/menu.html">
+                    <div
+                        class="bg-emerald-950 w-max text-white font-semibold mx-auto px-3 py-2 rounded-md hover:bg-emerald-900 mt-10 cursor-pointer">
+                        Lihat Semua Menu
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -353,4 +366,5 @@
             }
         })
     </script>
+    <script type="module" src="/js/custom.js"></script>
 </html>
