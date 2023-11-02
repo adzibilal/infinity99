@@ -63,12 +63,12 @@ function bukaWhatsApp() {
     const nomorWhatsapp = document.querySelector('#nomor-whatsapp').value
     const pesan = document.querySelector('#pesan').value
 
-    const text = `Halo, saya ${namaLengkap}.
-Email: ${email}.
+    const text = `Halo, saya ${namaLengkap}
+Email: ${email}
 Nomor WhatsApp: ${nomorWhatsapp}
 -------------------------------------
 Pesan: 
-${pesan}.`
+${pesan}`
 
     // Membuat URL WhatsApp dengan parameter yang dinamis
     const waURL = `https://api.whatsapp.com/send?phone=6281320969970&text=${encodeURIComponent(text)}`
