@@ -54,3 +54,31 @@ Menu.slice(0, maxItems).forEach(item => {
     // Add the menu item to the container
     menuContainer.appendChild(menuItem)
 })
+
+// Fungsi ini akan dijalankan ketika tombol "Kirim Pesan" diklik
+function bukaWhatsApp() {
+    // Ambil nilai dari inputan
+    const namaLengkap = document.querySelector('#nama-lengkap').value
+    const email = document.querySelector('#email').value
+    const nomorWhatsapp = document.querySelector('#nomor-whatsapp').value
+    const pesan = document.querySelector('#pesan').value
+
+    const text = `Halo, saya ${namaLengkap}.
+Email: ${email}.
+Nomor WhatsApp: ${nomorWhatsapp}
+-------------------------------------
+Pesan: 
+${pesan}.`
+
+    // Membuat URL WhatsApp dengan parameter yang dinamis
+    // const waURL = `https://api.whatsapp.com/send?phone=6281320969970&text=${encodeURIComponent(text)}`
+    const waURL = `https://api.whatsapp.com/send?phone=6289648321725&text=${encodeURIComponent(text)}`
+
+    // Membuka jendela baru dengan URL WhatsApp
+    window.open(waURL, '_blank')
+}
+
+// Menambahkan event listener ke tombol "Kirim Pesan"
+document
+    .querySelector('#kirim-pesan-button')
+    .addEventListener('click', bukaWhatsApp)
