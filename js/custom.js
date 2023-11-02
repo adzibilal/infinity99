@@ -40,6 +40,11 @@ Menu.slice(0, maxItems).forEach(item => {
     price.className = 'text-emerald-900 text-left font-bold'
     price.textContent = rupiahFormat(item.price)
 
+    // Set the data-aos attributes
+    menuItem.setAttribute('data-aos', 'fade-up')
+    menuItem.setAttribute('data-aos-easing', 'ease-out-cubic')
+    menuItem.setAttribute('data-aos-duration', '1000')
+
     // Append all elements to the menu item container
     menuItem.appendChild(imageContainer)
     menuItem.appendChild(category)
